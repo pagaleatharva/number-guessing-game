@@ -1,27 +1,25 @@
 # 🎯 Python Number Guessing Game
 
-A simple interactive **Number Guessing Game built with Python**. The computer randomly selects a number between 1 and 100, and the player gets a maximum of 7 attempts to guess it.
+A simple interactive **Number Guessing Game built using Python**. The computer generates a random number between 1 and 100, and the player gets up to 7 attempts to guess the correct number.
 
 ## 📌 Features
 
-* 🎲 Random number generation from 1 to 100
-* 🔢 Maximum 7 guessing attempts
-* ⬆️ Gives a **"Higher!"** hint when the guess is too low
-* ⬇️ Gives a **"Lower!"** hint when the guess is too high
-* ✅ Displays the number of attempts when the player wins
-* ❌ Handles invalid/non-numeric input
-* 🔄 Allows the player to restart the game
-* 👋 Displays a goodbye message when the player exits
+* 🎲 Generates a random number between 1 and 100
+* 🔢 Gives the player up to 7 attempts
+* ⬆️ Displays **"Higher"** when the guess is too low
+* ⬇️ Displays **"Lower"** when the guess is too high
+* ✅ Displays **"Correct"** when the player guesses the number
+* ❌ Shows the secret number when all attempts are used
+* 🔄 Allows the player to play the game again
 
 ## 🛠️ Technologies Used
 
-* **Python 3**
+* Python 3
 * `random` module
 * Functions
-* `while` loops
+* `while` loop
 * `if-elif-else` conditions
-* Exception handling (`try-except`)
-* User input
+* `break` and `continue`
 
 ## 📂 Project Structure
 
@@ -46,7 +44,7 @@ git clone https://github.com/pagaleatharva/python-number-guessing-game.git
 cd python-number-guessing-game
 ```
 
-### 3. Run the game
+### 3. Run the program
 
 ```bash
 python game.py
@@ -54,62 +52,34 @@ python game.py
 
 ## 🎮 How to Play
 
-1. The computer generates a secret number between **1 and 100**.
-2. Enter your guess when prompted.
+1. The computer randomly selects a number between **1 and 100**.
+2. Enter your guess.
 3. The game gives you a hint:
 
-   * `Higher!` → Your guess is too low.
-   * `Lower!` → Your guess is too high.
-4. You have a maximum of **7 valid attempts**.
-5. If you guess correctly, you win.
-6. After the game ends, you can choose whether to play again.
+   * **Higher** → Your guess is smaller than the secret number.
+   * **Lower** → Your guess is greater than the secret number.
+4. You have a maximum of **7 attempts**.
+5. If you guess correctly, the game displays **"Correct"**.
+6. If you use all 7 attempts, the secret number is displayed.
+7. After the game ends, you can choose whether to play again.
 
-### Example
+## 💻 Example
 
 ```text
-Enter your guess: 50
-Higher!
+enter the no 50
+higher
 
-Enter your guess: 75
-Lower!
+enter the no 75
+lower
 
-Enter your guess: 63
-Correct! You guessed it in 3 attempts.
+enter the no 63
+correct
 
-Play again? (yes/no): no
-Thanks for playing!
+play again(yes/no): no
 ```
 
-## 🧠 What I Learned
+## 🧠 Concepts Practiced
 
 This project helped me practice:
 
-* Writing and calling Python functions
-* Using loops to control program flow
-* Using conditional statements
-* Handling invalid user input with `try-except`
-* Using Python's `random` module
-* Understanding `break` and `continue`
-* Creating a replayable program
-* Organizing a small Python project for GitHub
-
-## 🚀 Future Improvements
-
-Possible improvements for future versions:
-
-* Add difficulty levels
-* Add a scoring system
-* Track the best score
-* Add a graphical user interface
-* Add multiplayer functionality
-* Store game statistics
-
-## 👨‍💻 Author
-
-**Atharva Pagale**
-
-GitHub: [@pagaleatharva](https://github.com/pagaleatharva)
-
----
-
-⭐ If you found this project useful, feel free to star the repository!
+* Creating and calling functi
